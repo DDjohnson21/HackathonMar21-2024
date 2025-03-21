@@ -1,0 +1,13 @@
+Security:
+    The camera can be reversed engineered and outside people can gain access to the camera.
+
+Solution:
+    Encrypted Video Stream
+
+Implement end-to-end encryption for all video data
+Use secure video protocols that prevent interception
+Employ time-limited encryption keys that regularly rotate
+
+Confusion:
+    The ai can be confused by the item it may be trying to look for.
+
