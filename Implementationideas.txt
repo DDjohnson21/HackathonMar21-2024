@@ -2,6 +2,10 @@ Simplest/Cheapest Option - SmartGlasses:
     Item finding:
         -If you lose an item anywhere, the glasses will take into account the location it was last 
         seen. When you ask it, it will tell you were it was.
+        - Identify designated important items (such as your phone, house keys, or charger), and record their last known 
+        location when they leave your field of view. Once an item reappears, remove the previous location record and 
+        update it with the new location.   
+        
     Alert emergency contacts:
         - The model will take into account the motion detection of SmartGlasses, and if it detects 
         an individual falling or dizzyness it will alert an emergency contact
@@ -14,6 +18,8 @@ Simplest/Cheapest Option - SmartGlasses:
         been consumed it will send a reminder.
         - Individuals can input their dietary restriction, and if the model sees them consuming 
         something with the ingredient in it, it will alert them.
+    
+
 
 Next-Level Option - HomeCamera:
     Item finding:

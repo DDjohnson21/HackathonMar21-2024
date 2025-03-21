@@ -17,6 +17,15 @@ Deploy honeypot feeds that trigger alerts if accessed
 Show blank/decoy feeds when unauthorized access is detected
 Include digital watermarks in legitimate feeds to detect unauthorized copies
 
+
+Battery(Device battry die):
+
+Solution: 
+    Send Multile charge battry notifications at the 30 mins of battery mark till pluged in. 
+
+
+
+
 Confusion:
     The Ai can be confused by the item it may be trying to look for if there multiple similar items.
 
