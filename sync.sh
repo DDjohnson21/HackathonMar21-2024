@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script to fetch updates from Git, merge with local changes, and push updates to main
+# Script to synchronize changes in a shared Codespace
 
 # Function to print messages
 print_message() {
@@ -9,50 +9,32 @@ print_message() {
   echo "========================================\n"
 }
 
-# Step 1: Fetch updates from remote
-print_message "Fetching updates from remote repository..."
-git fetch origin
+# Step 1: Pull latest updates from the remote repository
+print_message "Pulling updates from the remote repository..."
+git pull origin main
 
-# Step 2: Merge updates from remote main branch
-print_message "Merging updates from 'origin/main' into the current branch..."
-git merge origin/main
-
-# Step 3: Check for conflicts
+# Step 2: Check for merge conflicts
 if [ $? -ne 0 ]; then
-  print_message "Merge conflicts detected! Please resolve them and rerun the script."
+  print_message "Merge conflicts detected! Please resolve them manually and rerun the script."
   exit 1
 fi
 
-# Step 4: Add all local changes
-print_message "Adding all local changes..."
+# Step 3: Add all local changes
+print_message "Staging all local changes..."
 git add .
 
-# Step 5: Commit local changes
+# Step 4: Commit local changes
 print_message "Committing local changes..."
 read -p "Enter commit message: " commit_message
 git commit -m "$commit_message"
 
-# Step 6: Push changes to main
-print_message "Pushing changes to the 'main' branch..."
+# Step 5: Push changes to the remote repository
+print_message "Pushing changes to the remote repository..."
 git push origin main
 
 # Final message
 if [ $? -eq 0 ]; then
-  print_message "Updates successfully pushed to 'main'."
+  print_message "Synchronization complete! Changes have been pushed to the main branch."
 else
-  print_message "Error occurred while pushing updates. Please check your setup."
+  print_message "Error occurred during the push. Please check your connection and repository access."
 fi
-
-#In each Git repository where you want to use Git LFS, select the file types you'd like Git LFS to manage (or directly edit your .gitattributes). You can configure additional file extensions at anytime.
-
-#git lfs track "*.psd"
-#Now make sure .gitattributes is tracked:
-
-#git add .gitattributes
-#Note that defining the file types Git LFS should track will not, by itself, convert any pre-existing files to Git LFS, such as files on other branches or in your prior commit history. To do that, use the git lfs migrate(1) command, which has a range of options designed to suit various potential use cases.
-
-#There is no step three. Just commit and push as you normally would; for instance, if your current branch is named main:
-
-#it add file.psd
-#git commit -m "Add design file"
-#git push origin main
