@@ -1,1 +1,15 @@
-Alert 
+Simplest/Cheapest Option - SmartGlasses:
+    Item finding:
+        -If you lose an item anywhere, the glasses will take into account the location it was last seen. 
+        When you ask it, it will tell you were it was.
+    Alert emergency contacts:
+        - The model will take into account the motion detection of SmartGlasses, and if it detects an individual falling or dizzyness 
+        it will alert an emergency contact
+        - If the model notices that an individual took medication at a certain time it will keep account of it 
+        and if the individual forgets and takes the medication again within a certain time frame it will alert an emergency contact
+        for potential overdose.
+    Alert individual:
+        - An individual can set a reminder for some kind of medication they should be taking at a certain time. If the model sees the
+        medication being consumed it will not say anything, but if a set amount of time passes from the when the medication should have 
+        been consumed it will send a reminder.
+        - 

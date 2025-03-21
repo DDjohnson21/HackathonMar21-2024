@@ -3,11 +3,25 @@ Security:
 
 Solution:
     Encrypted Video Stream
-
 Implement end-to-end encryption for all video data
 Use secure video protocols that prevent interception
 Employ time-limited encryption keys that regularly rotate
+Monitoring & Detection
+
+    Implement anomaly detection for access patterns
+Log and analyze all access attempts
+Create automatic lockdown procedures for suspicious activities
+
+    Deception Mechanisms
+Deploy honeypot feeds that trigger alerts if accessed
+Show blank/decoy feeds when unauthorized access is detected
+Include digital watermarks in legitimate feeds to detect unauthorized copies
 
 Confusion:
-    The ai can be confused by the item it may be trying to look for.
+    The Ai can be confused by the item it may be trying to look for if there multiple similar items.
+
+Solution: 
+    Be more specific with how the items are labeled.
+
+
 
