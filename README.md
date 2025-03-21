@@ -21,3 +21,7 @@
 - **Natural language interface** (*"Elephant, where are my keys?"*)  
 - **Item registration system** with personalized labeling  
 - **Health monitoring capabilities** (emergency alerts, built-in privacy and security safeguards)
+
+## 🔗 Presentation  Link ⬇️
+
+[Elephant](https://docs.google.com/presentation/d/1D_za2aFfXjs-0ZPU5xEJIA68gIcB3SZo85fKA5KVrxs/edit?usp=sharing)
