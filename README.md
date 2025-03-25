@@ -1,4 +1,4 @@
-# HackathonMar21-2024 - Theme: **Safety in Visual AI** 
+# HackathonMar21-2024 (2nd Place Winner) - Theme: **Safety in Visual AI** 
 
 # Problem
 
